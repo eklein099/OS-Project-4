@@ -1,8 +1,9 @@
-#ifndef FCFS_ALGORITHM_HPP
-#define FCFS_ALGORITHM_HPP
+#ifndef SPN_ALGORITHM_HPP
+#define SPN_ALGORITHM_HPP
 
 #include <memory>
 #include "algorithms/scheduling_algorithm.hpp"
+#include "utilities/stable_priority_queue/stable_priority_queue.hpp"
 
 /*
     FCFSScheduler:
@@ -14,20 +15,20 @@
         feel are helpful for implementing the algorithm.
 */
 
-class FCFSScheduler : public Scheduler {
+class SPNScheduler : public Scheduler {
 public:
 
     //==================================================
     //  Member variables
     //==================================================
-    std::queue<std::shared_ptr<Thread>> thread_queue;
+    Stable_Priority_Queue<std::shared_ptr<Thread>> thread_priority_queue;
     // TODO: Add any member variables you may need.
 
     //==================================================
     //  Member functions
     //==================================================
 
-    FCFSScheduler(int slice = -1);
+    SPNScheduler(int slice = -1);
 
     std::shared_ptr<SchedulingDecision> get_next_thread();
 

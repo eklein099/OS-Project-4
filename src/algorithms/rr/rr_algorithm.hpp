@@ -1,5 +1,5 @@
-#ifndef FCFS_ALGORITHM_HPP
-#define FCFS_ALGORITHM_HPP
+#ifndef RR_ALGORITHM_HPP
+#define RR_ALGORITHM_HPP
 
 #include <memory>
 #include "algorithms/scheduling_algorithm.hpp"
@@ -14,7 +14,7 @@
         feel are helpful for implementing the algorithm.
 */
 
-class FCFSScheduler : public Scheduler {
+class RRScheduler : public Scheduler {
 public:
 
     //==================================================
@@ -27,7 +27,7 @@ public:
     //  Member functions
     //==================================================
 
-    FCFSScheduler(int slice = -1);
+    RRScheduler(int slice = 3);
 
     std::shared_ptr<SchedulingDecision> get_next_thread();
 

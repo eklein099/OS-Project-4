@@ -2,6 +2,9 @@
 #include <iostream>
 
 #include "algorithms/fcfs/fcfs_algorithm.hpp"
+#include "algorithms/spn/spn_algorithm.hpp"
+#include "algorithms/rr/rr_algorithm.hpp"
+#include "algorithms/priority/priority_algorithm.hpp"
 // TODO: Include your other algorithms as you make them
 
 #include "simulation/simulation.hpp"
@@ -16,7 +19,17 @@ Simulation::Simulation(FlagOptions flags) {
         this->scheduler = std::make_shared<FCFSScheduler>();
 
     // TODO: Add your other algorithms as you make them
-    } else {
+    }else if(flags.scheduler == "SPN"){
+        this->scheduler = std::make_shared<SPNScheduler>();
+    } else if(flags.scheduler == "RR"){
+        if(flags.time_slice == -1){
+            this->scheduler = std::make_shared<RRScheduler>(3);
+        }else{
+            this->scheduler = std::make_shared<RRScheduler>(flags.time_slice);
+        }
+    }else if(flags.scheduler == "PRIORITY"){
+        this->scheduler = std::make_shared<PRIORITYScheduler>();
+    }else {
         throw("No scheduler found for " + flags.scheduler);        
     }
     this->flags = flags;
@@ -206,6 +219,43 @@ void Simulation::handle_dispatcher_invoked(const std::shared_ptr<Event> event) {
 
 SystemStats Simulation::calculate_statistics() {
     // TODO: Calculate the system statistics
+    int total_turnaround_times[4]  = {0,0,0,0};
+    int total_response_times[4] = {0,0,0,0};
+
+    for(auto i =  processes.begin(); i != processes.end(); i++){
+
+        for(auto j: i->second->threads){
+
+            system_stats.total_time = std::max((int)(system_stats.total_time),j->end_time);
+            
+            total_response_times[j->priority] += j->start_time-j->arrival_time;
+            total_turnaround_times[j->priority] += j->end_time-j->arrival_time;
+            system_stats.thread_counts[j->priority]++;
+            
+            system_stats.service_time += j->service_time;
+            
+            system_stats.io_time += j->io_time;
+
+            
+        }
+
+    }
+
+    system_stats.total_idle_time = system_stats.total_time  - system_stats.service_time - system_stats.dispatch_time;
+    system_stats.total_cpu_time = system_stats.service_time + system_stats.dispatch_time;
+
+    //percentages
+    system_stats.cpu_utilization = ((double)(system_stats.total_cpu_time)/(double)(system_stats.total_time))*100.00;
+    system_stats.cpu_efficiency =  ((double)system_stats.service_time/(double)system_stats.total_time)*100.00;
+
+    //averages
+    for(int i = 0; i < 4; i++){
+        if(system_stats.thread_counts[i]  !=  0){
+            system_stats.avg_thread_turnaround_times[i] = (double)total_turnaround_times[i]/(double)system_stats.thread_counts[i];
+            system_stats.avg_thread_response_times[i] = (double)total_response_times[i]/(double)system_stats.thread_counts[i];
+        }
+    }
+
     return this->system_stats;
 }
 

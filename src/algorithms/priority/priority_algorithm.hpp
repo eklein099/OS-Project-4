@@ -1,8 +1,9 @@
-#ifndef FCFS_ALGORITHM_HPP
-#define FCFS_ALGORITHM_HPP
+#ifndef PRIORITY_ALGORITHM_HPP
+#define PRIORITY_ALGORITHM_HPP
 
 #include <memory>
 #include "algorithms/scheduling_algorithm.hpp"
+#include "utilities/stable_priority_queue/stable_priority_queue.hpp"
 
 /*
     FCFSScheduler:
@@ -14,20 +15,21 @@
         feel are helpful for implementing the algorithm.
 */
 
-class FCFSScheduler : public Scheduler {
+class PRIORITYScheduler : public Scheduler {
 public:
 
     //==================================================
     //  Member variables
     //==================================================
-    std::queue<std::shared_ptr<Thread>> thread_queue;
+    Stable_Priority_Queue<std::shared_ptr<Thread>> thread_priority_queue;
+    std::map<ProcessPriority,int> priority_counts;
     // TODO: Add any member variables you may need.
 
     //==================================================
     //  Member functions
     //==================================================
 
-    FCFSScheduler(int slice = -1);
+    PRIORITYScheduler(int slice = -1);
 
     std::shared_ptr<SchedulingDecision> get_next_thread();
 
