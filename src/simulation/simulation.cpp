@@ -5,6 +5,7 @@
 #include "algorithms/spn/spn_algorithm.hpp"
 #include "algorithms/rr/rr_algorithm.hpp"
 #include "algorithms/priority/priority_algorithm.hpp"
+#include "algorithms/mlfq/mlfq_algorithm.hpp"
 // TODO: Include your other algorithms as you make them
 
 #include "simulation/simulation.hpp"
@@ -29,6 +30,8 @@ Simulation::Simulation(FlagOptions flags) {
         }
     }else if(flags.scheduler == "PRIORITY"){
         this->scheduler = std::make_shared<PRIORITYScheduler>();
+    }else if(flags.scheduler == "MLFQ"){
+        this->scheduler = std::make_shared<MLFQScheduler>();
     }else {
         throw("No scheduler found for " + flags.scheduler);        
     }

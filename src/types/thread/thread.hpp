@@ -31,12 +31,17 @@ public:
     //  Member variables
     //==================================================
 
+    int runtime = 0;
+    
+    int previous_queue = -1;
+
+    int previous_service_time = 0;
+
     /*
         thread_id:
             The thread's ID. These are only unique within the context of a process.
     */
     int thread_id = -1;
-
     /*
         process_id:
             The ID for the thread's parent process. Each thread has a parent!
