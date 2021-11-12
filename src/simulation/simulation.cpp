@@ -34,7 +34,11 @@ Simulation::Simulation(FlagOptions flags) {
     }else if(flags.scheduler == "MLFQ"){
         this->scheduler = std::make_shared<MLFQScheduler>();
     }else if(flags.scheduler == "CFS"){
-        this->scheduler = std::make_shared<CFSScheduler>();
+        if(flags.time_slice == -1){
+            this->scheduler = std::make_shared<CFSScheduler>(3);
+        }else{
+            this->scheduler = std::make_shared<CFSScheduler>(flags.time_slice);
+        }
     }else {
         throw("No scheduler found for " + flags.scheduler);        
     }
