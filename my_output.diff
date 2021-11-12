@@ -1,2370 +1,2482 @@
-1c1,2367
-< terminate called after throwing an instance of 'std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >'
+54c54
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
 ---
-> At time 42:
->     THREAD_ARRIVED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from NEW to READY
-> 
-> At time 42:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 1 threads (vruntime = 0). Will run for at most 48 ticks.
-> 
-> At time 50:
->     THREAD_ARRIVED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from NEW to READY
-> 
-> At time 50:
->     THREAD_ARRIVED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from NEW to READY
-> 
-> At time 57:
->     THREAD_ARRIVED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from NEW to READY
-> 
-> At time 60:
->     THREAD_ARRIVED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from NEW to READY
-> 
-> At time 73:
->     THREAD_ARRIVED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from NEW to READY
-> 
-> At time 77:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 100:
->     THREAD_ARRIVED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from NEW to READY
-> 
-> At time 107:
->     CPU_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 107:
->     DISPATCHER_INVOKED
->     Thread 3 in process 740 [NORMAL]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 120:
->     IO_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
-> At time 142:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 145:
->     THREAD_PREEMPTED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 145:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 180:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+66c66
+< At time 145:
+---
+> At time 148:
+71c71
+< At time 145:
+---
+> At time 148:
+74c74
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 0). Will run for at most 6 ticks.
+76c76
+< At time 180:
+---
 > At time 183:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 183:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 186:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+81,82c81,82
+< At time 183:
+<     THREAD_PREEMPTED
+---
 > At time 189:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
+>     CPU_BURST_COMPLETED
+84c84
+<     Transitioned from RUNNING to READY
+---
+>     Transitioned from RUNNING to BLOCKED
+86c86
+< At time 183:
+---
 > At time 189:
->     DISPATCHER_INVOKED
->     Thread 1 in process 740 [NORMAL]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+89c89
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+91c91
+< At time 186:
+---
+> At time 192:
+96c96
+< At time 189:
+---
+> At time 198:
+101c101
+< At time 189:
+---
+> At time 198:
+104c104,109
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
 > 
-> At time 224:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 227:
->     THREAD_PREEMPTED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 227:
->     DISPATCHER_INVOKED
->     Thread 2 in process 740 [NORMAL]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 230:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
+> At time 212:
+>     IO_BURST_COMPLETED
+>     Thread 0 in process 642 [INTERACTIVE]
+>     Transitioned from BLOCKED to READY
+106c111
+< At time 224:
+---
 > At time 233:
->     THREAD_PREEMPTED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 233:
->     DISPATCHER_INVOKED
+111,112c116,117
+< At time 227:
+<     THREAD_PREEMPTED
+---
+> At time 237:
+>     CPU_BURST_COMPLETED
+114c119
+<     Transitioned from RUNNING to READY
+---
+>     Transitioned from RUNNING to BLOCKED
+116c121
+< At time 227:
+---
+> At time 237:
+119c124
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+121c126
+< At time 230:
+---
+> At time 240:
+126c131
+< At time 233:
+---
+> At time 246:
+131c136
+< At time 233:
+---
+> At time 246:
+134c139
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+136c141
+< At time 236:
+---
+> At time 249:
+141,169c146,149
+< At time 239:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+< 
+< At time 239:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 274:
+<     PROCESS_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 277:
+<     CPU_BURST_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 277:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 280:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+---
+> At time 252:
+>     IO_BURST_COMPLETED
+>     Thread 1 in process 740 [NORMAL]
+>     Transitioned from BLOCKED to READY
+171c151
+< At time 283:
+---
+> At time 255:
+173c153
+<     Thread 2 in process 642 [INTERACTIVE]
+---
 >     Thread 0 in process 740 [NORMAL]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 236:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 239:
->     THREAD_PREEMPTED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 239:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 274:
+176c156
+< At time 283:
+---
+> At time 255:
+179c159
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 0). Will run for at most 6 ticks.
+181,182c161,162
+< At time 286:
+<     THREAD_DISPATCH_COMPLETED
+---
+> At time 290:
 >     PROCESS_DISPATCH_COMPLETED
+186c166
+< At time 289:
+---
+> At time 296:
+191c171
+< At time 289:
+---
+> At time 296:
+193,194c173,174
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+---
 >     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 277:
+>     Selected from 7 threads (vruntime = 0). Will run for at most 6 ticks.
+196c176
+< At time 292:
+---
+> At time 299:
+198c178
+<     Thread 2 in process 642 [INTERACTIVE]
+---
+>     Thread 0 in process 642 [INTERACTIVE]
+201c181
+< At time 295:
+---
+> At time 305:
+203c183
+<     Thread 2 in process 642 [INTERACTIVE]
+---
+>     Thread 0 in process 642 [INTERACTIVE]
+206c186
+< At time 295:
+---
+> At time 305:
+209c189
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 0). Will run for at most 6 ticks.
+211c191
+< At time 298:
+---
+> At time 308:
+216,221c196
+< At time 300:
+<     IO_BURST_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from BLOCKED to READY
+< 
+< At time 300:
+---
+> At time 310:
+226c201
+< At time 300:
+---
+> At time 310:
+229c204
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+231c206
+< At time 303:
+---
+> At time 313:
+236c211
+< At time 306:
+---
+> At time 319:
+241c216
+< At time 306:
+---
+> At time 319:
+244c219
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+246c221
+< At time 309:
+---
+> At time 322:
+251c226
+< At time 312:
+---
+> At time 328:
+256c231
+< At time 312:
+---
+> At time 328:
+259,264c234
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 315:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+266,276c236
+< At time 318:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 318:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 321:
+---
+> At time 331:
+281,311c241
+< At time 321:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 324:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 324:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 327:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 330:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 330:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 333:
+---
+> At time 331:
+316,317c246,247
+< At time 336:
+<     THREAD_PREEMPTED
+---
+> At time 335:
 >     CPU_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
+319c249
+<     Transitioned from RUNNING to READY
+---
 >     Transitioned from RUNNING to BLOCKED
-> 
-> At time 277:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 280:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 283:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 283:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 286:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 289:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 289:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 292:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 295:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 295:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 298:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 300:
+321c251
+< At time 336:
+---
+> At time 335:
+324c254
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+326c256
+< At time 339:
+---
+> At time 338:
+331c261
+< At time 342:
+---
+> At time 344:
+336,351c266
+< At time 342:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 345:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 348:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 348:
+---
+> At time 344:
+354c269
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+356c271
+< At time 351:
+---
+> At time 347:
+361c276
+< At time 354:
+---
+> At time 353:
+366,381c281
+< At time 354:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 357:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 360:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 360:
+---
+> At time 353:
+384,399c284
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+< 
+< At time 363:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 366:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 366:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+401,407c286,287
+< At time 369:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 370:
+<     CPU_BURST_COMPLETED
+---
+> At time 355:
 >     IO_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
+409,414c289
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 370:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+---
 >     Transitioned from BLOCKED to READY
-> 
-> At time 300:
->     CPU_BURST_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 300:
->     DISPATCHER_INVOKED
+416c291
+< At time 373:
+---
+> At time 356:
+421c296
+< At time 375:
+---
+> At time 358:
+426c301
+< At time 375:
+---
+> At time 358:
+428,429c303,304
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Selected from 5 threads (vruntime = 1). Will run for at most 8 ticks.
+---
 >     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 303:
->     THREAD_DISPATCH_COMPLETED
+>     Selected from 6 threads (vruntime = 0). Will run for at most 6 ticks.
+431c306
+< At time 378:
+---
+> At time 361:
+433c308
+<     Thread 1 in process 642 [INTERACTIVE]
+---
 >     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 306:
->     THREAD_PREEMPTED
+436c311
+< At time 386:
+---
+> At time 367:
+438c313
+<     Thread 1 in process 642 [INTERACTIVE]
+---
 >     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 306:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 309:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 312:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 312:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 315:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 318:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 318:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 321:
->     IO_BURST_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
-> At time 321:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 324:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 324:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 327:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 330:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 330:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 333:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 336:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 336:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 339:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 342:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 342:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 345:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 348:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 348:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 351:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 354:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 354:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 357:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 360:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 360:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 363:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 366:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 366:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 369:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+441c316
+< At time 386:
+---
+> At time 367:
+444c319
+<     Selected from 5 threads (vruntime = 1). Will run for at most 8 ticks.
+---
+>     Selected from 6 threads (vruntime = 1). Will run for at most 6 ticks.
+446c321
+< At time 389:
+---
 > At time 370:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 370:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 373:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 375:
->     CPU_BURST_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 375:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 1). Will run for at most 8 ticks.
-> 
-> At time 378:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 386:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 386:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 1). Will run for at most 8 ticks.
-> 
-> At time 389:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 390:
->     IO_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
+451,456c326
+< At time 390:
+<     IO_BURST_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from BLOCKED to READY
+< 
+< At time 397:
+---
+> At time 376:
+461c331
+< At time 397:
+---
+> At time 376:
+464c334
+<     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 1). Will run for at most 6 ticks.
+466c336
+< At time 400:
+---
+> At time 379:
+471c341
+< At time 401:
+---
+> At time 384:
+476c346
+< At time 403:
+---
+> At time 385:
+481c351
+< At time 403:
+---
+> At time 385:
+484c354
+<     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 0). Will run for at most 6 ticks.
+486c356
+< At time 406:
+---
+> At time 388:
+491c361
+< At time 409:
+---
+> At time 394:
+496c366
+< At time 409:
+---
+> At time 394:
+499c369
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+501c371
+< At time 412:
+---
 > At time 397:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 397:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
-> At time 400:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 401:
->     IO_BURST_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
+506c376
+< At time 415:
+---
 > At time 403:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
+511c381
+< At time 415:
+---
 > At time 403:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 0). Will run for at most 3 ticks.
-> 
+514c384
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+516c386
+< At time 418:
+---
 > At time 406:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 409:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 409:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 412:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 415:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 415:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 418:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 421:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 421:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 424:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 427:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 427:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 430:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 433:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 433:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 436:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 439:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 439:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 442:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 445:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 445:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 448:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 451:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 451:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 454:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 457:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 457:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 460:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 463:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 463:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 466:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 467:
+521,522c391,392
+< At time 421:
+<     THREAD_PREEMPTED
+---
+> At time 408:
 >     CPU_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
+524c394
+<     Transitioned from RUNNING to READY
+---
 >     Transitioned from RUNNING to BLOCKED
-> 
-> At time 467:
->     DISPATCHER_INVOKED
+526c396
+< At time 421:
+---
+> At time 408:
+529c399
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 1). Will run for at most 6 ticks.
+531c401
+< At time 424:
+---
+> At time 411:
+536c406,411
+< At time 427:
+---
+> At time 416:
+>     IO_BURST_COMPLETED
 >     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 1). Will run for at most 3 ticks.
+>     Transitioned from BLOCKED to READY
 > 
+> At time 417:
+541c416
+< At time 427:
+---
+> At time 417:
+544c419
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+546c421
+< At time 430:
+---
+> At time 420:
+551c426
+< At time 433:
+---
+> At time 426:
+556c431
+< At time 433:
+---
+> At time 426:
+559c434
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+561c436
+< At time 436:
+---
+> At time 429:
+566c441
+< At time 439:
+---
+> At time 435:
+571c446
+< At time 439:
+---
+> At time 435:
+574c449
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+576c451
+< At time 442:
+---
+> At time 438:
+581c456
+< At time 445:
+---
+> At time 444:
+586c461
+< At time 445:
+---
+> At time 444:
+589c464
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+591c466
+< At time 448:
+---
+> At time 447:
+596c471
+< At time 451:
+---
+> At time 453:
+601c476
+< At time 451:
+---
+> At time 453:
+604c479
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+606c481
+< At time 454:
+---
+> At time 456:
+611,612c486,487
+< At time 457:
+<     THREAD_PREEMPTED
+---
+> At time 461:
+>     CPU_BURST_COMPLETED
+614c489
+<     Transitioned from RUNNING to READY
+---
+>     Transitioned from RUNNING to BLOCKED
+616c491
+< At time 457:
+---
+> At time 461:
+619c494
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 1). Will run for at most 6 ticks.
+621c496
+< At time 460:
+---
+> At time 464:
+626c501
+< At time 463:
+---
 > At time 470:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 472:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 472:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 1). Will run for at most 8 ticks.
-> 
+631c506
+< At time 463:
+---
+> At time 470:
+634c509
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 1). Will run for at most 6 ticks.
+636c511
+< At time 466:
+---
+> At time 473:
+641c516
+< At time 467:
+---
 > At time 475:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 480:
->     IO_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
+646,661c521
+< At time 467:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 470:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 472:
+<     CPU_BURST_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 472:
+---
+> At time 475:
+666c526
+< At time 475:
+---
+> At time 478:
+671,675d530
+< At time 480:
+<     IO_BURST_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from BLOCKED to READY
+< 
+677,786d531
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 483:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 486:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 489:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 489:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 490:
+<     IO_BURST_COMPLETED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from BLOCKED to READY
+< 
+< At time 492:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 495:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 495:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 498:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 501:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 501:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 504:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 507:
+<     THREAD_PREEMPTED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 507:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 510:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 513:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 513:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 516:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 519:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 519:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 522:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 525:
+791c536
+< At time 525:
+---
 > At time 483:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 483:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 486:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 489:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 489:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 490:
+793,799c538,539
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 528:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+---
+>     Thread 1 in process 740 [NORMAL]
+>     Selected from 4 threads (vruntime = 4). Will run for at most 6 ticks.
+801,802c541,542
+< At time 530:
+<     CPU_BURST_COMPLETED
+---
+> At time 488:
 >     IO_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
+804,814c544
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 530:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Selected from 5 threads (vruntime = 2). Will run for at most 8 ticks.
+< 
+< At time 533:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+---
 >     Transitioned from BLOCKED to READY
-> 
-> At time 492:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 495:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 495:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
+816c546
+< At time 538:
+---
+> At time 496:
+821,842c551,552
+< At time 541:
+<     THREAD_PREEMPTED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 541:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 544:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 547:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 547:
+<     DISPATCHER_INVOKED
+---
 > At time 498:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 501:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 501:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 504:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 507:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 507:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 510:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 513:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 513:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 516:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 519:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 519:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 522:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 525:
->     CPU_BURST_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 525:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 528:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 530:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 530:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 2). Will run for at most 8 ticks.
-> 
-> At time 533:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 538:
 >     IO_BURST_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
+844c554
+<     Selected from 6 threads (vruntime = 2). Will run for at most 3 ticks.
+---
 >     Transitioned from BLOCKED to READY
-> 
-> At time 541:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 541:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 544:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 547:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 547:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 550:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 553:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 553:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 556:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 557:
->     IO_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
-> At time 559:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 559:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
-> At time 562:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 565:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 565:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
-> 
+846,848c556,558
+< At time 550:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 1 in process 642 [INTERACTIVE]
+---
+> At time 518:
+>     PROCESS_DISPATCH_COMPLETED
+>     Thread 1 in process 740 [NORMAL]
+851c561
+< At time 553:
+---
+> At time 524:
+853c563
+<     Thread 1 in process 642 [INTERACTIVE]
+---
+>     Thread 1 in process 740 [NORMAL]
+856c566
+< At time 553:
+---
+> At time 524:
+858,867d567
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 556:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 557:
+<     IO_BURST_COMPLETED
+869,874c569
+<     Transitioned from BLOCKED to READY
+< 
+< At time 559:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+877,882c572
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 562:
+<     THREAD_DISPATCH_COMPLETED
+---
+>     PROCESS_DISPATCH_COMPLETED
+893,907d582
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 1). Will run for at most 3 ticks.
+< 
+< At time 568:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 571:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 571:
+<     DISPATCHER_INVOKED
+909c584
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 1). Will run for at most 6 ticks.
+911c586
+< At time 574:
+---
 > At time 568:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 571:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 571:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+916c591
+< At time 577:
+---
 > At time 574:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+921c596
+< At time 577:
+---
+> At time 574:
+924c599
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+926c601
+< At time 580:
+---
 > At time 577:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 577:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 580:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 583:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 583:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 586:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 589:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 589:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+939c614
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+946,955d620
+< At time 589:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 589:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+957,991d621
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 595:
+<     THREAD_PREEMPTED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 595:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 598:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 601:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 601:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 604:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 607:
+996c626
+< At time 607:
+---
 > At time 592:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+999c629
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+1001c631
+< At time 610:
+---
 > At time 595:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 595:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 598:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+1006c636
+< At time 613:
+---
 > At time 601:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
+1011c641
+< At time 613:
+---
 > At time 601:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+1014c644
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+1016c646
+< At time 616:
+---
 > At time 604:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 607:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 607:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+1021c651
+< At time 619:
+---
 > At time 610:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+1026c656
+< At time 619:
+---
+> At time 610:
+1029c659
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+1031c661
+< At time 622:
+---
 > At time 613:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 613:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 616:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+1036c666
+< At time 625:
+---
 > At time 619:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
+1041c671
+< At time 625:
+---
 > At time 619:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+1044c674
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+1046c676
+< At time 628:
+---
 > At time 622:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 625:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 625:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+1051c681
+< At time 631:
+---
 > At time 628:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+1056c686
+< At time 631:
+---
+> At time 628:
+1059c689
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+1061c691
+< At time 634:
+---
 > At time 631:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 631:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 634:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 637:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 637:
->     DISPATCHER_INVOKED
+1074c704
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+1081,1082c711,712
+< At time 643:
+<     THREAD_PREEMPTED
+---
+> At time 645:
+>     CPU_BURST_COMPLETED
+1084c714
+<     Transitioned from RUNNING to READY
+---
+>     Transitioned from RUNNING to BLOCKED
+1086c716
+< At time 643:
+---
+> At time 645:
+1089c719
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 2). Will run for at most 6 ticks.
+1091c721
+< At time 646:
+---
+> At time 648:
+1096c726,731
+< At time 649:
+---
+> At time 653:
+>     IO_BURST_COMPLETED
 >     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+>     Transitioned from BLOCKED to READY
 > 
-> At time 640:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 643:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 643:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 646:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 649:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 649:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 652:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 655:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 655:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 658:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 661:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 661:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 664:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+> At time 654:
+1101c736
+< At time 649:
+---
+> At time 654:
+1104c739
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 2). Will run for at most 6 ticks.
+1106c741
+< At time 652:
+---
+> At time 657:
+1111,1112c746,747
+< At time 655:
+<     THREAD_PREEMPTED
+---
+> At time 662:
+>     CPU_BURST_COMPLETED
+1114c749
+<     Transitioned from RUNNING to READY
+---
+>     Transitioned from RUNNING to BLOCKED
+1116c751
+< At time 655:
+---
+> At time 662:
+1119c754
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 2). Will run for at most 6 ticks.
+1121c756
+< At time 658:
+---
 > At time 665:
->     CPU_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 665:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 668:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 670:
->     CPU_BURST_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 670:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 2). Will run for at most 8 ticks.
-> 
-> At time 673:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 675:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 675:
->     DISPATCHER_INVOKED
->     Thread 3 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
+1126c761
+< At time 661:
+---
+> At time 671:
+1131c766
+< At time 661:
+---
+> At time 671:
+1134c769
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 2). Will run for at most 6 ticks.
+1136c771
+< At time 664:
+---
+> At time 674:
+1141c776
+< At time 665:
+---
+> At time 680:
+1146,1161c781
+< At time 665:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 668:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 670:
+<     CPU_BURST_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 670:
+---
+> At time 680:
+1166c786
+< At time 673:
+---
 > At time 683:
->     IO_BURST_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
+1171,1191c791
+< At time 675:
+<     CPU_BURST_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 675:
+<     DISPATCHER_INVOKED
+<     Thread 3 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 683:
+<     IO_BURST_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from BLOCKED to READY
+< 
+< At time 691:
+<     IO_BURST_COMPLETED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from BLOCKED to READY
+< 
+< At time 692:
+---
+> At time 684:
+1196,1246c796
+< At time 710:
+<     PROCESS_DISPATCH_COMPLETED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 713:
+<     THREAD_PREEMPTED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+< 
+< At time 713:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 748:
+<     PROCESS_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 751:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 751:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 754:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 757:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 757:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 760:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 763:
+---
 > At time 691:
->     IO_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
+1251c801
+< At time 763:
+---
+> At time 691:
+1254c804
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 2). Will run for at most 6 ticks.
+1256c806
+< At time 766:
+---
+> At time 694:
+1261c811
+< At time 769:
+---
+> At time 700:
+1266,1281c816
+< At time 769:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+< 
+< At time 772:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 775:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 775:
+---
+> At time 700:
+1284c819
+<     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 3). Will run for at most 6 ticks.
+1286c821
+< At time 778:
+---
+> At time 703:
+1291,1346c826
+< At time 781:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 781:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 740 [NORMAL]
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 816:
+<     PROCESS_DISPATCH_COMPLETED
+<     Thread 1 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 817:
+<     CPU_BURST_COMPLETED
+<     Thread 1 in process 740 [NORMAL]
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 817:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 740 [NORMAL]
+<     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 820:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 823:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+< 
+< At time 823:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 740 [NORMAL]
+<     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 826:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 829:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+< 
+< At time 829:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 832:
+---
+> At time 706:
+1348,1352d827
+<     Thread 1 in process 740 [NORMAL]
+<     Transitioned from BLOCKED to READY
+< 
+< At time 864:
+<     PROCESS_DISPATCH_COMPLETED
+1354c829
+<     Transitioned from READY to RUNNING
+---
 >     Transitioned from BLOCKED to READY
-> 
-> At time 692:
->     IO_BURST_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
-> At time 710:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 713:
->     THREAD_PREEMPTED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 713:
->     DISPATCHER_INVOKED
+1356c831
+< At time 867:
+---
+> At time 709:
+1358c833
+<     Thread 1 in process 642 [INTERACTIVE]
+---
 >     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+1361c836
+< At time 867:
+---
+> At time 709:
+1364c839
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 3). Will run for at most 6 ticks.
+1366c841
+< At time 870:
+---
+> At time 712:
+1371c846
+< At time 873:
+---
+> At time 718:
+1376,1391c851
+< At time 873:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 876:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 879:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 879:
+---
+> At time 718:
+1394c854
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 3). Will run for at most 6 ticks.
+1396c856
+< At time 882:
+---
+> At time 721:
+1401c861
+< At time 885:
+---
+> At time 727:
+1406,1421c866
+< At time 885:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 888:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 891:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 891:
+---
+> At time 727:
+1424c869
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 3). Will run for at most 6 ticks.
+1426c871
+< At time 894:
+---
+> At time 730:
+1431c876
+< At time 897:
+---
+> At time 736:
+1436,1451c881
+< At time 897:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 900:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 903:
+<     THREAD_PREEMPTED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 903:
+---
+> At time 736:
+1454c884
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 3). Will run for at most 6 ticks.
+1456c886
+< At time 906:
+---
+> At time 739:
+1461c891
+< At time 909:
+---
+> At time 745:
+1466,1481c896
+< At time 909:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 912:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 915:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 915:
+---
+> At time 745:
+1484c899
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 3). Will run for at most 6 ticks.
+1486c901
+< At time 918:
+---
 > At time 748:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 751:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 751:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+1491c906
+< At time 921:
+---
 > At time 754:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+1496,1511c911
+< At time 921:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 924:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 927:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 927:
+---
+> At time 754:
+1514c914
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+---
+>     Selected from 7 threads (vruntime = 3). Will run for at most 6 ticks.
+1516c916
+< At time 930:
+---
 > At time 757:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 757:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 760:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+1521,1522c921,922
+< At time 933:
+<     THREAD_PREEMPTED
+---
+> At time 759:
+>     THREAD_COMPLETED
+1524,1539c924
+<     Transitioned from RUNNING to READY
+< 
+< At time 933:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 936:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 939:
+<     THREAD_PREEMPTED
+<     Thread 1 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+---
+>     Transitioned from RUNNING to EXIT
+1541c926
+< At time 939:
+---
+> At time 759:
+1544c929
+<     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
+---
+>     Selected from 6 threads (vruntime = 3). Will run for at most 6 ticks.
+1546c931
+< At time 942:
+---
+> At time 762:
+1551c936
+< At time 943:
+---
 > At time 763:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
+1556,1571c941
+< At time 943:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
+< 
+< At time 946:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 949:
+<     THREAD_PREEMPTED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to READY
+< 
+< At time 949:
+---
 > At time 763:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
+1574c944
+<     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
+---
+>     Selected from 5 threads (vruntime = 3). Will run for at most 8 ticks.
+1576c946
+< At time 952:
+---
 > At time 766:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 769:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 769:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 772:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 775:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 775:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 2). Will run for at most 3 ticks.
-> 
-> At time 778:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 781:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 781:
->     DISPATCHER_INVOKED
->     Thread 1 in process 740 [NORMAL]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 816:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 817:
->     CPU_BURST_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 817:
->     DISPATCHER_INVOKED
+1581c951
+< At time 953:
+---
+> At time 770:
+1586,1601c956
+< At time 953:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Selected from 5 threads (vruntime = 3). Will run for at most 8 ticks.
+< 
+< At time 956:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from READY to RUNNING
+< 
+< At time 957:
+<     THREAD_COMPLETED
+<     Thread 0 in process 642 [INTERACTIVE]
+<     Transitioned from RUNNING to EXIT
+< 
+< At time 957:
+---
+> At time 770:
+1603,1604c958,959
+<     Thread 1 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 4). Will run for at most 3 ticks.
+---
+>     Thread 3 in process 740 [NORMAL]
+>     Selected from 4 threads (vruntime = 6). Will run for at most 6 ticks.
+1606c961
+< At time 975:
+---
+> At time 792:
+1611c966
+< At time 992:
+---
+> At time 805:
+1613c968
+<     Thread 1 in process 740 [NORMAL]
+---
+>     Thread 3 in process 740 [NORMAL]
+1616c971
+< At time 995:
+---
+> At time 811:
+1618c973
+<     Thread 1 in process 740 [NORMAL]
+---
+>     Thread 3 in process 740 [NORMAL]
+1621c976
+< At time 995:
+---
+> At time 811:
+1626c981
+< At time 1030:
+---
+> At time 846:
+1631c986
+< At time 1038:
+---
+> At time 854:
+1636c991
+< At time 1038:
+---
+> At time 854:
+1641c996
+< At time 1041:
+---
+> At time 857:
+1646c1001
+< At time 1049:
+---
+> At time 865:
+1651c1006
+< At time 1049:
+---
+> At time 865:
+1656c1011
+< At time 1052:
+---
+> At time 868:
+1661c1016
+< At time 1053:
+---
+> At time 869:
+1666c1021
+< At time 1053:
+---
+> At time 869:
+1668,1669c1023,1024
+<     Thread 3 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 6). Will run for at most 3 ticks.
+---
 >     Thread 2 in process 740 [NORMAL]
->     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 820:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 823:
->     THREAD_PREEMPTED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 823:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 826:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 829:
->     THREAD_PREEMPTED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 829:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 832:
->     IO_BURST_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 864:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 867:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 867:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 870:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 873:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 873:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 876:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 879:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 879:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 882:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 885:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 885:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 888:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 891:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 891:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
+>     Selected from 4 threads (vruntime = 6). Will run for at most 6 ticks.
+1671c1026
+< At time 1078:
+---
 > At time 894:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 897:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 897:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 900:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 903:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 903:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 906:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 909:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 909:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 912:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 915:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 915:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 918:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 921:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 921:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 924:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 927:
->     THREAD_PREEMPTED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 927:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 930:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 933:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 933:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 936:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 939:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 939:
->     DISPATCHER_INVOKED
->     Thread 2 in process 642 [INTERACTIVE]
->     Selected from 7 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 942:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 943:
->     THREAD_COMPLETED
->     Thread 2 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to EXIT
-> 
-> At time 943:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 946:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 949:
->     THREAD_PREEMPTED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 949:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 6 threads (vruntime = 3). Will run for at most 3 ticks.
-> 
-> At time 952:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+1676c1031
+< At time 1088:
+---
+> At time 904:
+1678c1033
+<     Thread 3 in process 740 [NORMAL]
+---
+>     Thread 2 in process 740 [NORMAL]
+1681c1036
+< At time 1091:
+---
+> At time 910:
+1683c1038
+<     Thread 3 in process 740 [NORMAL]
+---
+>     Thread 2 in process 740 [NORMAL]
+1686c1041
+< At time 1091:
+---
+> At time 910:
+1691c1046
+< At time 1126:
+---
+> At time 945:
+1696c1051
+< At time 1134:
+---
 > At time 953:
->     CPU_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
+1701c1056
+< At time 1134:
+---
 > At time 953:
->     DISPATCHER_INVOKED
->     Thread 0 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 3). Will run for at most 8 ticks.
-> 
+1706c1061
+< At time 1137:
+---
 > At time 956:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 957:
->     THREAD_COMPLETED
->     Thread 0 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to EXIT
-> 
-> At time 957:
->     DISPATCHER_INVOKED
->     Thread 1 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 4). Will run for at most 3 ticks.
-> 
+1711c1066
+< At time 1145:
+---
+> At time 964:
+1716c1071
+< At time 1145:
+---
+> At time 964:
+1721c1076
+< At time 1148:
+---
+> At time 967:
+1726c1081
+< At time 1156:
+---
 > At time 975:
->     IO_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
-> At time 992:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 995:
->     THREAD_PREEMPTED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 995:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 3). Will run for at most 8 ticks.
-> 
-> At time 1030:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1038:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1038:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 3). Will run for at most 8 ticks.
-> 
-> At time 1041:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1049:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1049:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 4). Will run for at most 8 ticks.
-> 
-> At time 1052:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1053:
->     CPU_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1053:
->     DISPATCHER_INVOKED
->     Thread 3 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 6). Will run for at most 3 ticks.
-> 
-> At time 1078:
->     IO_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1088:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1091:
->     THREAD_PREEMPTED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1091:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 4). Will run for at most 8 ticks.
-> 
-> At time 1126:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1134:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1134:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 4). Will run for at most 8 ticks.
-> 
-> At time 1137:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1145:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1145:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 4). Will run for at most 8 ticks.
-> 
-> At time 1148:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1156:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1156:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 5). Will run for at most 8 ticks.
-> 
-> At time 1159:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1164:
->     CPU_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1164:
->     DISPATCHER_INVOKED
->     Thread 2 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 6). Will run for at most 3 ticks.
-> 
-> At time 1180:
->     IO_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1199:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1202:
->     THREAD_PREEMPTED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1202:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 5). Will run for at most 8 ticks.
-> 
-> At time 1237:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1245:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1245:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 5). Will run for at most 8 ticks.
-> 
-> At time 1248:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1249:
->     CPU_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1249:
->     DISPATCHER_INVOKED
+1731c1086
+< At time 1156:
+---
+> At time 975:
+1736c1091
+< At time 1159:
+---
+> At time 978:
+1741c1096
+< At time 1164:
+---
+> At time 983:
+1746c1101
+< At time 1164:
+---
+> At time 983:
+1748,1749c1103,1104
+<     Thread 2 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 6). Will run for at most 3 ticks.
+---
 >     Thread 0 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 6). Will run for at most 3 ticks.
-> 
+>     Selected from 4 threads (vruntime = 6). Will run for at most 6 ticks.
+1751c1106
+< At time 1180:
+---
+> At time 999:
+1756c1111
+< At time 1199:
+---
+> At time 1018:
+1758c1113
+<     Thread 2 in process 740 [NORMAL]
+---
+>     Thread 0 in process 740 [NORMAL]
+1761c1116
+< At time 1202:
+---
+> At time 1024:
+1763c1118
+<     Thread 2 in process 740 [NORMAL]
+---
+>     Thread 0 in process 740 [NORMAL]
+1766c1121
+< At time 1202:
+---
+> At time 1024:
+1771c1126
+< At time 1237:
+---
+> At time 1059:
+1776c1131
+< At time 1245:
+---
+> At time 1067:
+1781c1136
+< At time 1245:
+---
+> At time 1067:
+1786c1141
+< At time 1248:
+---
+> At time 1070:
+1791c1146
+< At time 1249:
+---
+> At time 1071:
+1796c1151
+< At time 1249:
+---
+> At time 1071:
+1798,1799c1153,1154
+<     Thread 0 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 6). Will run for at most 3 ticks.
+---
+>     Thread 1 in process 740 [NORMAL]
+>     Selected from 4 threads (vruntime = 10). Will run for at most 6 ticks.
+1801c1156
+< At time 1269:
+---
+> At time 1091:
+1806c1161
+< At time 1284:
+---
+> At time 1106:
+1808c1163
+<     Thread 0 in process 740 [NORMAL]
+---
+>     Thread 1 in process 740 [NORMAL]
+1811c1166
+< At time 1287:
+---
+> At time 1112:
+1813c1168
+<     Thread 0 in process 740 [NORMAL]
+---
+>     Thread 1 in process 740 [NORMAL]
+1816c1171
+< At time 1287:
+---
+> At time 1112:
+1821c1176
+< At time 1322:
+---
+> At time 1147:
+1826c1181
+< At time 1330:
+---
+> At time 1155:
+1831c1186
+< At time 1330:
+---
+> At time 1155:
+1836c1191
+< At time 1333:
+---
+> At time 1158:
+1841c1196
+< At time 1341:
+---
+> At time 1166:
+1846c1201
+< At time 1341:
+---
+> At time 1166:
+1851c1206
+< At time 1344:
+---
+> At time 1169:
+1856c1211
+< At time 1349:
+---
+> At time 1174:
+1861c1216
+< At time 1349:
+---
+> At time 1174:
+1863,1864c1218,1219
+<     Thread 1 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 7). Will run for at most 3 ticks.
+---
+>     Thread 3 in process 740 [NORMAL]
+>     Selected from 4 threads (vruntime = 12). Will run for at most 6 ticks.
+1866c1221
+< At time 1352:
+---
+> At time 1177:
+1871c1226
+< At time 1384:
+---
+> At time 1209:
+1873c1228
+<     Thread 1 in process 740 [NORMAL]
+---
+>     Thread 3 in process 740 [NORMAL]
+1876c1231
+< At time 1387:
+---
+> At time 1215:
+1878c1233
+<     Thread 1 in process 740 [NORMAL]
+---
+>     Thread 3 in process 740 [NORMAL]
+1881c1236
+< At time 1387:
+---
+> At time 1215:
+1886c1241
+< At time 1422:
+---
+> At time 1250:
+1891c1246
+< At time 1430:
+---
+> At time 1258:
+1896c1251
+< At time 1430:
+---
+> At time 1258:
+1901c1256
+< At time 1433:
+---
+> At time 1261:
+1906c1261
+< At time 1441:
+---
 > At time 1269:
->     IO_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1284:
+1911c1266
+< At time 1441:
+---
+> At time 1269:
+1916c1271
+< At time 1444:
+---
+> At time 1272:
+1921c1276
+< At time 1450:
+---
+> At time 1278:
+1926,1941c1281
+< At time 1450:
+<     DISPATCHER_INVOKED
+<     Thread 3 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 9). Will run for at most 3 ticks.
+< 
+< At time 1485:
+<     PROCESS_DISPATCH_COMPLETED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 1488:
+<     THREAD_PREEMPTED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+< 
+< At time 1488:
+---
+> At time 1278:
+1944c1284
+<     Selected from 4 threads (vruntime = 9). Will run for at most 3 ticks.
+---
+>     Selected from 4 threads (vruntime = 12). Will run for at most 6 ticks.
+1946,1947c1286,1287
+< At time 1491:
+<     THREAD_DISPATCH_COMPLETED
+---
+> At time 1313:
 >     PROCESS_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1287:
->     THREAD_PREEMPTED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1287:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 5). Will run for at most 8 ticks.
-> 
+1951c1291
+< At time 1494:
+---
+> At time 1319:
+1956c1296
+< At time 1494:
+---
+> At time 1319:
+1959c1299
+<     Selected from 4 threads (vruntime = 9). Will run for at most 3 ticks.
+---
+>     Selected from 4 threads (vruntime = 12). Will run for at most 6 ticks.
+1961c1301
+< At time 1497:
+---
 > At time 1322:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1330:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1330:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 5). Will run for at most 8 ticks.
-> 
-> At time 1333:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
+1966,1967c1306,1307
+< At time 1500:
+<     THREAD_PREEMPTED
+---
+> At time 1326:
+>     CPU_BURST_COMPLETED
+1969c1309
+<     Transitioned from RUNNING to READY
+---
+>     Transitioned from RUNNING to BLOCKED
+1971c1311
+< At time 1500:
+---
+> At time 1326:
+1974c1314
+<     Selected from 4 threads (vruntime = 10). Will run for at most 3 ticks.
+---
+>     Selected from 3 threads (vruntime = 16). Will run for at most 6 ticks.
+1976c1316
+< At time 1503:
+---
+> At time 1329:
+1981c1321
+< At time 1506:
+---
+> At time 1335:
+1986c1326
+< At time 1506:
+---
+> At time 1335:
+1989c1329
+<     Selected from 4 threads (vruntime = 12). Will run for at most 3 ticks.
+---
+>     Selected from 3 threads (vruntime = 18). Will run for at most 6 ticks.
+1991c1331
+< At time 1509:
+---
+> At time 1338:
+1996,2009c1336,1339
+< At time 1512:
+<     THREAD_PREEMPTED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+< 
+< At time 1512:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 12). Will run for at most 3 ticks.
+< 
+< At time 1515:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+---
 > At time 1341:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
+>     IO_BURST_COMPLETED
+>     Thread 0 in process 740 [NORMAL]
+>     Transitioned from BLOCKED to READY
+2011,2014c1341,1344
+< At time 1518:
+<     THREAD_PREEMPTED
+<     Thread 2 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+---
 > At time 1341:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 6). Will run for at most 8 ticks.
-> 
+>     CPU_BURST_COMPLETED
+>     Thread 3 in process 740 [NORMAL]
+>     Transitioned from RUNNING to BLOCKED
+2016c1346
+< At time 1518:
+---
+> At time 1341:
+2019c1349
+<     Selected from 4 threads (vruntime = 12). Will run for at most 3 ticks.
+---
+>     Selected from 3 threads (vruntime = 16). Will run for at most 6 ticks.
+2021c1351
+< At time 1521:
+---
 > At time 1344:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1349:
->     CPU_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1349:
->     DISPATCHER_INVOKED
->     Thread 1 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 7). Will run for at most 3 ticks.
-> 
-> At time 1352:
+2026c1356
+< At time 1524:
+---
+> At time 1350:
+2031,2061c1361
+< At time 1524:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 13). Will run for at most 3 ticks.
+< 
+< At time 1527:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 1 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 1530:
+<     THREAD_PREEMPTED
+<     Thread 1 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+< 
+< At time 1530:
+<     DISPATCHER_INVOKED
+<     Thread 3 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 15). Will run for at most 3 ticks.
+< 
+< At time 1533:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 1536:
+<     THREAD_PREEMPTED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from RUNNING to READY
+< 
+< At time 1536:
+---
+> At time 1350:
+2064c1364
+<     Selected from 4 threads (vruntime = 15). Will run for at most 3 ticks.
+---
+>     Selected from 3 threads (vruntime = 18). Will run for at most 6 ticks.
+2066c1366
+< At time 1539:
+---
+> At time 1353:
+2071c1371
+< At time 1542:
+---
+> At time 1359:
+2076,2091c1376
+< At time 1542:
+<     DISPATCHER_INVOKED
+<     Thread 0 in process 740 [NORMAL]
+<     Selected from 4 threads (vruntime = 15). Will run for at most 3 ticks.
+< 
+< At time 1545:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 0 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 1546:
+<     CPU_BURST_COMPLETED
+<     Thread 0 in process 740 [NORMAL]
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 1546:
+---
+> At time 1359:
+2094c1379
+<     Selected from 3 threads (vruntime = 16). Will run for at most 5 ticks.
+---
+>     Selected from 3 threads (vruntime = 22). Will run for at most 6 ticks.
+2096c1381,1386
+< At time 1549:
+---
+> At time 1360:
 >     IO_BURST_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
+>     Thread 3 in process 740 [NORMAL]
 >     Transitioned from BLOCKED to READY
 > 
-> At time 1384:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
+> At time 1362:
+2101,2102c1391,1392
+< At time 1554:
+<     THREAD_PREEMPTED
+---
+> At time 1365:
+>     THREAD_COMPLETED
+2104c1394
+<     Transitioned from RUNNING to READY
+---
+>     Transitioned from RUNNING to EXIT
+2106c1396
+< At time 1554:
+---
+> At time 1365:
+2109c1399
+<     Selected from 3 threads (vruntime = 18). Will run for at most 5 ticks.
+---
+>     Selected from 3 threads (vruntime = 21). Will run for at most 6 ticks.
+2111c1401
+< At time 1557:
+---
+> At time 1368:
+2116,2117c1406,1407
+< At time 1560:
+<     CPU_BURST_COMPLETED
+---
+> At time 1373:
+>     THREAD_COMPLETED
+2119,2139c1409
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 1560:
+<     DISPATCHER_INVOKED
+<     Thread 2 in process 740 [NORMAL]
+<     Selected from 2 threads (vruntime = 18). Will run for at most 12 ticks.
+< 
+< At time 1561:
+<     IO_BURST_COMPLETED
+<     Thread 0 in process 740 [NORMAL]
+<     Transitioned from BLOCKED to READY
+< 
+< At time 1563:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 2 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 1573:
+<     CPU_BURST_COMPLETED
+<     Thread 2 in process 740 [NORMAL]
+<     Transitioned from RUNNING to BLOCKED
+---
+>     Transitioned from RUNNING to EXIT
+2141c1411
+< At time 1573:
+---
+> At time 1373:
+2144c1414
+<     Selected from 2 threads (vruntime = 16). Will run for at most 12 ticks.
+---
+>     Selected from 2 threads (vruntime = 22). Will run for at most 12 ticks.
+2146c1416
+< At time 1576:
+---
+> At time 1376:
+2151,2156c1421
+< At time 1579:
+<     IO_BURST_COMPLETED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from BLOCKED to READY
+< 
+< At time 1588:
+---
+> At time 1388:
+2161,2176c1426
+< At time 1588:
+<     DISPATCHER_INVOKED
+<     Thread 1 in process 740 [NORMAL]
+<     Selected from 3 threads (vruntime = 21). Will run for at most 5 ticks.
+< 
+< At time 1591:
+<     THREAD_DISPATCH_COMPLETED
+<     Thread 1 in process 740 [NORMAL]
+<     Transitioned from READY to RUNNING
+< 
+< At time 1595:
+<     THREAD_COMPLETED
+<     Thread 1 in process 740 [NORMAL]
+<     Transitioned from RUNNING to EXIT
+< 
+< At time 1595:
+---
+> At time 1388:
+2178,2182d1427
+<     Thread 3 in process 740 [NORMAL]
+<     Selected from 2 threads (vruntime = 21). Will run for at most 12 ticks.
+< 
+< At time 1597:
+<     IO_BURST_COMPLETED
+2184c1429
+<     Transitioned from BLOCKED to READY
+---
+>     Selected from 2 threads (vruntime = 24). Will run for at most 12 ticks.
+2186c1431
+< At time 1598:
+---
+> At time 1391:
+2188c1433
+<     Thread 3 in process 740 [NORMAL]
+---
+>     Thread 2 in process 740 [NORMAL]
+2191,2194c1436,1439
+< At time 1603:
+<     THREAD_COMPLETED
+<     Thread 3 in process 740 [NORMAL]
+<     Transitioned from RUNNING to EXIT
+---
+> At time 1395:
+>     CPU_BURST_COMPLETED
+>     Thread 2 in process 740 [NORMAL]
+>     Transitioned from RUNNING to BLOCKED
+2196c1441
+< At time 1603:
+---
+> At time 1395:
+2199c1444
+<     Selected from 2 threads (vruntime = 28). Will run for at most 12 ticks.
+---
+>     Selected from 1 threads (vruntime = 34). Will run for at most 48 ticks.
+2201c1446
+< At time 1606:
+---
+> At time 1398:
+2206c1451
+< At time 1618:
+---
+> At time 1404:
+2211c1456,1461
+< At time 1618:
+---
+> At time 1419:
+>     IO_BURST_COMPLETED
+>     Thread 2 in process 740 [NORMAL]
+>     Transitioned from BLOCKED to READY
 > 
-> At time 1387:
->     THREAD_PREEMPTED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1387:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 6). Will run for at most 8 ticks.
-> 
+> At time 1419:
+2216c1466
+< At time 1621:
+---
 > At time 1422:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1430:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1430:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 6). Will run for at most 8 ticks.
-> 
-> At time 1433:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1441:
->     THREAD_PREEMPTED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to READY
-> 
-> At time 1441:
->     DISPATCHER_INVOKED
->     Thread 1 in process 642 [INTERACTIVE]
->     Selected from 5 threads (vruntime = 6). Will run for at most 8 ticks.
-> 
-> At time 1444:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from READY to RUNNING
-> 
-> At time 1450:
->     THREAD_COMPLETED
->     Thread 1 in process 642 [INTERACTIVE]
->     Transitioned from RUNNING to EXIT
-> 
-> At time 1450:
->     DISPATCHER_INVOKED
->     Thread 3 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 9). Will run for at most 3 ticks.
-> 
-> At time 1485:
->     PROCESS_DISPATCH_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1488:
->     THREAD_PREEMPTED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1488:
->     DISPATCHER_INVOKED
+2221,2226c1471
+< At time 1635:
+<     CPU_BURST_COMPLETED
+<     Thread 2 in process 740 [NORMAL]
+<     Transitioned from RUNNING to BLOCKED
+< 
+< At time 1640:
+---
+> At time 1426:
+2231c1476,1481
+< At time 1640:
+---
+> At time 1436:
+>     CPU_BURST_COMPLETED
 >     Thread 2 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 9). Will run for at most 3 ticks.
+>     Transitioned from RUNNING to BLOCKED
 > 
-> At time 1491:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1494:
->     THREAD_PREEMPTED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1494:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 9). Will run for at most 3 ticks.
-> 
-> At time 1497:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1500:
->     THREAD_PREEMPTED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1500:
->     DISPATCHER_INVOKED
->     Thread 1 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 10). Will run for at most 3 ticks.
-> 
-> At time 1503:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1506:
->     THREAD_PREEMPTED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1506:
->     DISPATCHER_INVOKED
->     Thread 3 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 12). Will run for at most 3 ticks.
-> 
-> At time 1509:
->     THREAD_DISPATCH_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1512:
->     THREAD_PREEMPTED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1512:
->     DISPATCHER_INVOKED
->     Thread 2 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 12). Will run for at most 3 ticks.
-> 
-> At time 1515:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1518:
->     THREAD_PREEMPTED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1518:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 12). Will run for at most 3 ticks.
-> 
-> At time 1521:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1524:
->     THREAD_PREEMPTED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1524:
->     DISPATCHER_INVOKED
->     Thread 1 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 13). Will run for at most 3 ticks.
-> 
-> At time 1527:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1530:
->     THREAD_PREEMPTED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1530:
->     DISPATCHER_INVOKED
->     Thread 3 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 15). Will run for at most 3 ticks.
-> 
-> At time 1533:
->     THREAD_DISPATCH_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1536:
->     THREAD_PREEMPTED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1536:
->     DISPATCHER_INVOKED
->     Thread 2 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 15). Will run for at most 3 ticks.
-> 
-> At time 1539:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
+> At time 1436:
+2236c1486
+< At time 1643:
+---
+> At time 1439:
+2241c1491
+< At time 1659:
+---
+> At time 1460:
+2246c1496
+< At time 1672:
+---
+> At time 1468:
+2251c1501
+< At time 1672:
+---
+> At time 1468:
+2256c1506
+< At time 1675:
+---
+> At time 1471:
+2261c1511
+< At time 1680:
+---
+> At time 1476:
+2266c1516
+< At time 1681:
+---
+> At time 1477:
+2271c1521
+< At time 1681:
+---
+> At time 1477:
+2276c1526
+< At time 1684:
+---
+> At time 1480:
+2281c1531
+< At time 1702:
+---
+> At time 1498:
+2286c1536
+< At time 1709:
+---
+> At time 1505:
+2291c1541
+< At time 1709:
+---
+> At time 1505:
+2296c1546
+< At time 1712:
+---
+> At time 1508:
+2301c1551
+< At time 1721:
+---
+> At time 1517:
+2306c1556
+< At time 1742:
+---
+> At time 1538:
+2311c1561
+< At time 1742:
+---
+> At time 1538:
+2316c1566
+< At time 1745:
+---
+> At time 1541:
+2321c1571
+< At time 1746:
+---
 > At time 1542:
->     THREAD_PREEMPTED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1542:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 4 threads (vruntime = 15). Will run for at most 3 ticks.
-> 
-> At time 1545:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1546:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1546:
->     DISPATCHER_INVOKED
->     Thread 1 in process 740 [NORMAL]
->     Selected from 3 threads (vruntime = 16). Will run for at most 5 ticks.
-> 
-> At time 1549:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1554:
->     THREAD_PREEMPTED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1554:
->     DISPATCHER_INVOKED
->     Thread 3 in process 740 [NORMAL]
->     Selected from 3 threads (vruntime = 18). Will run for at most 5 ticks.
-> 
-> At time 1557:
->     THREAD_DISPATCH_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1560:
->     CPU_BURST_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1560:
->     DISPATCHER_INVOKED
->     Thread 2 in process 740 [NORMAL]
->     Selected from 2 threads (vruntime = 18). Will run for at most 12 ticks.
-> 
-> At time 1561:
->     IO_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1563:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1573:
->     CPU_BURST_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1573:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 2 threads (vruntime = 16). Will run for at most 12 ticks.
-> 
-> At time 1576:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1579:
->     IO_BURST_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1588:
->     THREAD_PREEMPTED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to READY
-> 
-> At time 1588:
->     DISPATCHER_INVOKED
->     Thread 1 in process 740 [NORMAL]
->     Selected from 3 threads (vruntime = 21). Will run for at most 5 ticks.
-> 
-> At time 1591:
->     THREAD_DISPATCH_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1595:
->     THREAD_COMPLETED
->     Thread 1 in process 740 [NORMAL]
->     Transitioned from RUNNING to EXIT
-> 
-> At time 1595:
->     DISPATCHER_INVOKED
->     Thread 3 in process 740 [NORMAL]
->     Selected from 2 threads (vruntime = 21). Will run for at most 12 ticks.
-> 
-> At time 1597:
->     IO_BURST_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1598:
->     THREAD_DISPATCH_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1603:
->     THREAD_COMPLETED
->     Thread 3 in process 740 [NORMAL]
->     Transitioned from RUNNING to EXIT
-> 
-> At time 1603:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 2 threads (vruntime = 28). Will run for at most 12 ticks.
-> 
-> At time 1606:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1618:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1618:
->     DISPATCHER_INVOKED
->     Thread 2 in process 740 [NORMAL]
->     Selected from 1 threads (vruntime = 28). Will run for at most 48 ticks.
-> 
-> At time 1621:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1635:
->     CPU_BURST_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1640:
->     IO_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1640:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 1 threads (vruntime = 40). Will run for at most 48 ticks.
-> 
-> At time 1643:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1659:
->     IO_BURST_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1672:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1672:
->     DISPATCHER_INVOKED
->     Thread 2 in process 740 [NORMAL]
->     Selected from 1 threads (vruntime = 42). Will run for at most 48 ticks.
-> 
-> At time 1675:
->     THREAD_DISPATCH_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1680:
->     IO_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1681:
->     THREAD_COMPLETED
->     Thread 2 in process 740 [NORMAL]
->     Transitioned from RUNNING to EXIT
-> 
-> At time 1681:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 1 threads (vruntime = 69). Will run for at most 48 ticks.
-> 
-> At time 1684:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1702:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1709:
->     IO_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1709:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 1 threads (vruntime = 87). Will run for at most 48 ticks.
-> 
-> At time 1712:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1721:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1742:
->     IO_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1742:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 1 threads (vruntime = 96). Will run for at most 48 ticks.
-> 
-> At time 1745:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1746:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1770:
->     IO_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1770:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 1 threads (vruntime = 97). Will run for at most 48 ticks.
-> 
-> At time 1773:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1794:
->     CPU_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to BLOCKED
-> 
-> At time 1816:
->     IO_BURST_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from BLOCKED to READY
-> 
-> At time 1816:
->     DISPATCHER_INVOKED
->     Thread 0 in process 740 [NORMAL]
->     Selected from 1 threads (vruntime = 118). Will run for at most 48 ticks.
-> 
-> At time 1819:
->     THREAD_DISPATCH_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from READY to RUNNING
-> 
-> At time 1827:
->     THREAD_COMPLETED
->     Thread 0 in process 740 [NORMAL]
->     Transitioned from RUNNING to EXIT
-> 
-> SIMULATION COMPLETED!
-> 
+2326c1576
+< At time 1770:
+---
+> At time 1566:
+2331c1581
+< At time 1770:
+---
+> At time 1566:
+2336c1586
+< At time 1773:
+---
+> At time 1569:
+2341c1591
+< At time 1794:
+---
+> At time 1590:
+2346c1596
+< At time 1816:
+---
+> At time 1612:
+2351c1601
+< At time 1816:
+---
+> At time 1612:
+2356c1606
+< At time 1819:
+---
+> At time 1615:
+2361c1611
+< At time 1827:
+---
+> At time 1623:
