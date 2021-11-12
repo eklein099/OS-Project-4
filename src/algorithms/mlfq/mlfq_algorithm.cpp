@@ -11,8 +11,6 @@
 */
 
 MLFQScheduler::MLFQScheduler(int slice) {
-    
-
 }
 
 //set a task's sime slice to 2^(q#)
@@ -64,15 +62,7 @@ std::shared_ptr<SchedulingDecision> MLFQScheduler::get_next_thread() {
 }
 
 void MLFQScheduler::add_to_ready_queue(std::shared_ptr<Thread> thread) {
-        /*if(thread->previous_queue != 9){
-            mlfq[thread->previous_queue].emplace(thread);
-        }else if(thread->previous_queue != -1){
-            thread->previous_queue++;
-            mlfq[thread->previous_queue + 1].emplace(thread);
-        }else{
-            mlfq[0].emplace(thread);
-            thread->previous_queue = 0;
-        }*/
+        
         thread->runtime += thread->service_time-thread->previous_service_time;
         thread->previous_service_time = thread->service_time;
 
@@ -85,14 +75,15 @@ void MLFQScheduler::add_to_ready_queue(std::shared_ptr<Thread> thread) {
             thread->runtime = 0;
         }
         
+        thread->previous_queue = queue_number;
         mlfq[queue_number].push(thread->priority,thread);
+
 }
 
 size_t MLFQScheduler::size() const {
-        //sum the number of elements  in each queue
-        int count = 0;
+        int sum = 0;
         for(int i = 0; i < 10; i++){
-            count += mlfq[i].size();
+            sum += mlfq[i].size();
         }
-        return count;
+        return sum;
 }

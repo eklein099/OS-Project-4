@@ -21,7 +21,6 @@ public:
     //  Member variables
     //==================================================
     Stable_Priority_Queue<std::shared_ptr<Thread>> mlfq[10];
-
     // TODO: Add any member variables you may need.
 
     //==================================================
